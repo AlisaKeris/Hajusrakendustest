@@ -1,82 +1,90 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<inimene>
+<inimene synd="1926">
   <nimi>Elisaveta II
   </nimi>
   <synniaasta>1926</synniaasta>
+  <titul>Queen</titul>
   <lapsed>
-    <inimene>
+    <inimene synd="1948">
       <nimi>Charles</nimi>
       <synniaasta>1948</synniaasta>
+      <titul>Prints</titul>
       <lapsed>
-        <inimene>
+        <inimene synd="1984">
           <nimi>Harry</nimi>
           <synniaasta>1984</synniaasta>
+          <titul>Prints</titul>
           <lapsed>
 
-            <inimene>
+            <inimene synd="2019">
 
               <nimi>Archi</nimi>
 
               <synniaasta>2019</synniaasta>
-
+              <titul>Prints</titul>
             </inimene>
-            <inimene>
+            <inimene synd="2021">
 
               <nimi>Lilibet</nimi>
 
               <synniaasta>2021</synniaasta>
-
+              <titul>Princess</titul>
             </inimene>
           </lapsed>
         </inimene>
-        <inimene>
+        <inimene synd="1982">
           <nimi>William</nimi>
           <synniaasta>1982</synniaasta>
+          <titul>Prints</titul>
           <lapsed>
 
-            <inimene>
+            <inimene  synd="2013">
 
               <nimi>Dzordz Aleksandr Lui</nimi>
 
               <synniaasta>2013</synniaasta>
-
+              <titul>Prints</titul>
             </inimene>
 
-            <inimene>
+            <inimene  synd="2015">
 
               <nimi>Sharlotte</nimi>
 
               <synniaasta>2015</synniaasta>
-
+              <titul>Princess</titul>
             </inimene>
 
-            <inimene>
+            <inimene synd="2018">
 
               <nimi>Lui Artur Charlz</nimi>
 
               <synniaasta>2018</synniaasta>
-
+              <titul>Prints</titul>
             </inimene>
 
           </lapsed>
         </inimene>
       </lapsed>
     </inimene>
-    <inimene>
+    <inimene synd="1950">
       <nimi>Anna</nimi>
       <synniaasta>1950</synniaasta>
+      <titul>Princess</titul>
     </inimene>
-    <inimene>
+    <inimene synd="1960">
       <nimi>Andrew</nimi>
       <synniaasta>1960</synniaasta>
+      <titul>Prints</titul>
     </inimene>
-    <inimene>
+    <inimene synd="1964">
       <nimi>Edvard</nimi>
       <synniaasta>1964</synniaasta>
+      <titul>Prints</titul>
       <lapsed>
-        <inimene>
+        <inimene synd="2003">
           <nimi>Luisa</nimi>
           <synniaasta>2003</synniaasta>
+          <titul>Princess</titul>
         </inimene>
       </lapsed>
     </inimene>

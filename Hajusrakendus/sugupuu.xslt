@@ -238,7 +238,32 @@
 
     </table>
     <br></br>
-    <strong>Искать в дереве все имена, содержащие определенное количество символов плюсом к поиску по буквам.</strong>
+    <strong>Algab kirjaga 'A' ja teksti pikkus on 6</strong>
+    <br></br>
+    <xsl:for-each select="//inimene">
+    <xsl:if test="starts-with(nimi,'A') or string-length(nimi)=6">
+      <xsl:value-of select="nimi"/>,
+    </xsl:if>
+    </xsl:for-each>
+    <br></br>
+    <strong>Sisaldab 'A' täht ja teksti pikkus on 6</strong>
+    <br></br>
+    <xsl:for-each select="//inimene">
+      <xsl:if test="contains(nimi,'a') or string-length(nimi)=6">
+        <xsl:value-of select="nimi"/>,
+      </xsl:if>
+    </xsl:for-each>
+    <br></br>
+    <strong>Andmepuus muudetakse sünniaasta atribuudiks.</strong>
+    <br></br>
+    <xsl:for-each select="//inimene">
+      <xsl:sort select="@synd"/>
+      <li>
+        <xsl:value-of select="concat(nimi,',',@synd)"/>
+      </li>
+    </xsl:for-each>
+    <br></br>
+    <strong>Andmepuus lisatakse igale inimesele element, mille sisu koosneb eesnime tähest, punktist ja perekonnanimest.</strong>
     <br></br>
     
   </xsl:template>
