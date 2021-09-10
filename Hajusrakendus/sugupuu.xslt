@@ -161,5 +161,85 @@
       </xsl:for-each>
 
     </table>
+   <br></br>
+    <strong>Выводить в  таблице возраст каждого ребенка</strong>
+    <br></br>
+    <table border="1">
+      <tr>
+        <th>Nimi</th>
+        <th>Synniaasta</th>
+        <th>Vanem</th>
+        <th>Vanavanem</th>
+        <th>Vanus</th>
+      </tr>
+      <xsl:for-each select="//inimene">
+        <xsl:sort select="synniaasta"/>
+        <tr>
+          <td>
+            <xsl:value-of select="nimi"/>
+          </td>
+          <td>
+            <xsl:value-of select="synniaasta"/>
+          </td>
+          <td>
+            <xsl:value-of select="../../nimi"/>
+          </td>
+          <td>
+            <xsl:if test="../../..">
+              <xsl:value-of select="../../../../nimi"/>
+            </xsl:if>
+          </td>
+          <td>
+            <xsl:value-of select="2021-synniaasta"/>
+          </td>
+        </tr>
+      </xsl:for-each>
+
+    </table>
+    <br></br>
+    <strong>Väljasta iga inimese juures, mitmendal oma vanema sünniaastal ta sündis. </strong>
+    <br></br>
+    <table border="1">
+      <tr>
+        <th>Nimi</th>
+        <th>Synniaasta</th>
+        <th>Vanem</th>
+        <th>Vanavanem</th>
+        <th>Vanus</th>
+        <th>Lapsevanema vanus</th>
+      </tr>
+      <xsl:for-each select="//inimene">
+        <xsl:sort select="synniaasta"/>
+        <tr>
+          <td>
+            <xsl:value-of select="nimi"/>
+          </td>
+          <td>
+            <xsl:value-of select="synniaasta"/>
+          </td>
+          <td>
+            <xsl:value-of select="../../nimi"/>
+          </td>
+          <td>
+            <xsl:if test="../../..">
+              <xsl:value-of select="../../../../nimi"/>
+            </xsl:if>
+          </td>
+          <td>
+            <xsl:value-of select="2021-synniaasta"/>
+          </td>
+          <td>
+            <xsl:if test="../..">
+              <xsl:value-of select="synniaasta - ../../synniaasta"/>
+            </xsl:if>
+          </td>
+        </tr>
+      </xsl:for-each>
+
+    </table>
+    <br></br>
+    <strong>Искать в дереве все имена, содержащие определенное количество символов плюсом к поиску по буквам.</strong>
+    <br></br>
+    
   </xsl:template>
 </xsl:stylesheet>
