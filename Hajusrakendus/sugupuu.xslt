@@ -263,8 +263,27 @@
       </li>
     </xsl:for-each>
     <br></br>
-    <strong>Andmepuus lisatakse igale inimesele element, mille sisu koosneb eesnime tähest, punktist ja perekonnanimest.</strong>
+    <strong>У кого имя короче 7 символов, подсветить зеленым</strong>
     <br></br>
-    
+    <xsl:for-each select="//inimene">
+      <xsl:if test="string-length(nimi) &lt;= 7">
+        <li style="background-color:green">
+          <xsl:value-of select="nimi"/>
+        </li>
+        
+      </xsl:if>
+      <xsl:if test="string-length(nimi) &gt;= 10">
+        <li style="background-color:red">
+          <xsl:value-of select="nimi"/>
+        </li>
+
+      </xsl:if>
+      <xsl:if test="string-length(nimi) &lt; 10 and string-length(nimi) &gt; 7">
+        <li style="background-color:white">
+          <xsl:value-of select="nimi"/>
+        </li>
+
+      </xsl:if>
+    </xsl:for-each>
   </xsl:template>
 </xsl:stylesheet>
