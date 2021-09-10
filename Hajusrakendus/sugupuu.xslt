@@ -106,5 +106,60 @@
       </xsl:for-each>
 
     </table>
+    <br></br>
+    <strong>Kus võimalik, seal väljasta tabelis iga inimese vanema nimi</strong><br></br>
+    <table border="1">
+      <tr>
+        <th>Nimi</th>
+        <th>Synniaasta</th>
+        <th>Vanem</th>
+      </tr>
+      <xsl:for-each select="//inimene">
+        <xsl:sort select="synniaasta"/>
+        <tr>
+          <td>
+            <xsl:value-of select="nimi"/>
+          </td>
+          <td>
+            <xsl:value-of select="synniaasta"/>
+          </td>
+          <td>
+            <xsl:value-of select="../../nimi"/>
+          </td>
+        </tr>
+      </xsl:for-each>
+      
+    </table>
+    <br></br>
+    <strong>Väljasta tabelis ka vanavanema nimi</strong>
+    <br></br>
+    <table border="1">
+      <tr>
+        <th>Nimi</th>
+        <th>Synniaasta</th>
+        <th>Vanem</th>
+        <th>Vanavanem</th>
+      </tr>
+      <xsl:for-each select="//inimene">
+        <xsl:sort select="synniaasta"/>
+        <tr>
+          <td>
+            <xsl:value-of select="nimi"/>
+          </td>
+          <td>
+            <xsl:value-of select="synniaasta"/>
+          </td>
+          <td>
+            <xsl:value-of select="../../nimi"/>
+          </td>
+          <td>
+            <xsl:if test="../../..">
+            <xsl:value-of select="../../../../nimi"/>
+            </xsl:if>
+          </td>
+        </tr>
+      </xsl:for-each>
+
+    </table>
   </xsl:template>
 </xsl:stylesheet>
