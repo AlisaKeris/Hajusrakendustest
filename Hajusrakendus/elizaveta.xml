@@ -9,12 +9,56 @@
       <synniaasta>1948</synniaasta>
       <lapsed>
         <inimene>
-          <nimi>Garry</nimi>
+          <nimi>Harry</nimi>
           <synniaasta>1984</synniaasta>
+          <lapsed>
+
+            <inimene>
+
+              <nimi>Archi</nimi>
+
+              <synnaaasta>2019</synnaaasta>
+
+            </inimene>
+            <inimene>
+
+              <nimi>Lilibet</nimi>
+
+              <synnaaasta>2021</synnaaasta>
+
+            </inimene>
+          </lapsed>
         </inimene>
         <inimene>
           <nimi>William</nimi>
           <synniaasta>1982</synniaasta>
+          <lapsed>
+
+            <inimene>
+
+              <nimi>Dzordz Aleksandr Lui</nimi>
+
+              <synnaaasta>2013</synnaaasta>
+
+            </inimene>
+
+            <inimene>
+
+              <nimi>Sharlotte</nimi>
+
+              <synnaaasta>2015</synnaaasta>
+
+            </inimene>
+
+            <inimene>
+
+              <nimi>Lui Artur Charlz</nimi>
+
+              <synnaaasta>2018</synnaaasta>
+
+            </inimene>
+
+          </lapsed>
         </inimene>
       </lapsed>
     </inimene>

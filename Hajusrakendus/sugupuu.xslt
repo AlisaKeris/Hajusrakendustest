@@ -49,5 +49,18 @@
         </li>
       </xsl:for-each>
     </ul>
+    <strong>Iga inimese kohta kirjuta kõik tema järglased</strong>
+    <ul>
+      <xsl:for-each select="//inimene[lapsed]">
+        <xsl:sort select="synniaasta"/>
+        <li>
+          <xsl:value-of select="nimi"/>:
+         <xsl:for-each select="lapsed//inimene">
+           <xsl:value-of select="nimi"/>
+           <xsl:if test="not(position()=last())">,</xsl:if>
+         </xsl:for-each>
+        </li>
+      </xsl:for-each>
+    </ul>
   </xsl:template>
 </xsl:stylesheet>
