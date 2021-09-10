@@ -77,6 +77,34 @@
 
       <xsl:value-of select="synniaasta"/>
 <xsl:if test="not(position()=last())">,</xsl:if>
-    </xsl:for-each>
+    </xsl:for-each><br></br>
+    <strong>Väljastatakse nimed, kel on vähemalt kaks last</strong>
+    <ul>
+      <xsl:for-each select="inimene">
+        <xsl:if test="count(lapsed/inimene) >=2">
+        </xsl:if>
+        <li>
+          <xsl:value-of select="nimi"/>
+        </li>
+      </xsl:for-each>
+    </ul><br></br>
+    <strong>Väljasta sugupuus leiduvad andmed tabelina</strong><br></br>
+    <table border="1">
+      <tr>
+        <th>Nimi</th>
+        <th>Synniaasta</th>
+      </tr>
+      <xsl:for-each select="//inimene">
+      <tr>
+        <td>
+          <xsl:value-of select="nimi"/>
+        </td>
+        <td>
+          <xsl:value-of select="synniaasta"/>
+        </td>
+      </tr>
+      </xsl:for-each>
+
+    </table>
   </xsl:template>
 </xsl:stylesheet>
