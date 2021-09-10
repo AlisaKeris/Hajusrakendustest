@@ -27,8 +27,14 @@
       <synniaasta>1960</synniaasta>
     </inimene>
     <inimene>
-      <nimi>Eduard</nimi>
+      <nimi>Edvard</nimi>
       <synniaasta>1964</synniaasta>
+      <lapsed>
+        <inimene>
+          <nimi>Luisa</nimi>
+          <synniaasta>2003</synniaasta>
+        </inimene>
+      </lapsed>
     </inimene>
   </lapsed>
 </inimene>
