@@ -62,5 +62,21 @@
         </li>
       </xsl:for-each>
     </ul>
+    <strong>Trüki välja kõikide inimeste sünniaastad</strong>
+    <br></br>
+    Kasvamine  
+    <xsl:for-each select="//inimene">
+        <xsl:sort select="synniaasta"/>
+        
+          <xsl:value-of select="synniaasta"/>
+        <xsl:if test="not(position()=last())">,</xsl:if>
+      </xsl:for-each><br></br>
+    Kahanemine
+    <xsl:for-each select="//inimene">
+      <xsl:sort select="synniaasta" order="descending"/>
+
+      <xsl:value-of select="synniaasta"/>
+<xsl:if test="not(position()=last())">,</xsl:if>
+    </xsl:for-each>
   </xsl:template>
 </xsl:stylesheet>
