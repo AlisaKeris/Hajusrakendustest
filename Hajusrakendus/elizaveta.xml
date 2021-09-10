@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<inimene>
+  <nimi>Elisaveta II
+  </nimi>
+  <synniaasta>1926</synniaasta>
+  <lapsed>
+    <inimene>
+      <nimi>Charles</nimi>
+      <synniaasta>1948</synniaasta>
+      <lapsed>
+        <inimene>
+          <nimi>Garry</nimi>
+          <synniaasta>1984</synniaasta>
+        </inimene>
+        <inimene>
+          <nimi>William</nimi>
+          <synniaasta>1982</synniaasta>
+        </inimene>
+      </lapsed>
+    </inimene>
+    <inimene>
+      <nimi>Anna</nimi>
+      <synniaasta>1950</synniaasta>
+    </inimene>
+    <inimene>
+      <nimi>Andrew</nimi>
+      <synniaasta>1960</synniaasta>
+    </inimene>
+    <inimene>
+      <nimi>Eduard</nimi>
+      <synniaasta>1964</synniaasta>
+    </inimene>
+  </lapsed>
+</inimene>
